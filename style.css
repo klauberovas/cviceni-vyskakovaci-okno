@@ -9,6 +9,9 @@ body {
   background-color: #b4eafb;
   border-radius: 10px;
   font-size: 30px;
+  /*Posunutí modalu zleva 0 200px */
+  position: relative;
+  left: 200px;
 }
 
 button {
@@ -20,11 +23,55 @@ button {
   color: black;
   width: 30px;
   border-radius: 3px;
+  /*posunutí exitu do pravého horního okraje*/
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .ok {
   background-color: #28a745;
   color: white;
+  /*Posunutí ok dolního středu vůči modalu*/
+  position: absolute;
+  bottom: 0;
+  left: calc(50vw / 2 - 80px /2);
 }
 
 /* sem přijdou tvoje styly */
+.okno__text {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.okno {
+  width: 30vw;
+  height: 20vh;
+  border: 5px solid #5bcef3;
+  background-color: #b4eafb;
+  border-radius: 10px;
+  font-size: 30px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.okno__exit {
+  color: black;
+  width: 25px;
+  border-radius: 1px;
+  /*napozicování do pravého horního okraje*/
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.okno__chat {
+  background-color: #28a745;
+  width: 100px;
+  color: white;
+  /*napozicování doprostřed okna*/
+  position: absolute;
+  bottom: 0;
+  left: calc(30vw / 2 - 100px / 2);
+}
