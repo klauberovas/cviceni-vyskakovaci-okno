@@ -51,6 +51,7 @@ button {
   background-color: #b4eafb;
   border-radius: 10px;
   font-size: 30px;
+  /* Zafixování okna k pravému dolnímu rohu */
   position: fixed;
   bottom: 0;
   right: 0;
